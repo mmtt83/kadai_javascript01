@@ -21,22 +21,55 @@ function janken(user){
     console.log(user, 'user'); //ユーザーの手の出力確認
     console.log(pc, 'pc');     //PCの手の出力確認
 
-    let result = (function(){
-        //ユーザーがグーを出した時の条件分岐
-        if(user == 0 && pc == 0) return '引き分け';
-        if(user == 0 && pc == 1) return '勝ち';
-        if(user == 0 && pc == 2) return '負け';
-        //ユーザーがチョキを出した時の条件分岐
-        if(user == 1 && pc == 1) return '引き分け';
-        if(user == 1 && pc == 2) return '勝ち';
-        if(user == 1 && pc == 0) return '負け';
-        //ユーザーがパーを出した時の条件分岐
-        if(user == 2 && pc == 2) return '引き分け';
-        if(user == 2 && pc == 0) return '勝ち';
-        if(user == 2 && pc == 1) return '負け';
-    });
+    // let result = (function(){
+    //     //ユーザーがグーを出した時の条件分岐
+    //     if(user == 0 && pc == 0) return 'もう一回！';
+    //     if(user == 0 && pc == 1) return '<img src="img/win01.png" width="300">' ;
+    //     if(user == 0 && pc == 2) return '負けちゃった..';
+    //     //ユーザーがチョキを出した時の条件分岐
+    //     if(user == 1 && pc == 1) return 'もう一回！';
+    //     if(user == 1 && pc == 2) return '勝った〜!!';
+    //     if(user == 1 && pc == 0) return '負けちゃった..';
+    //     //ユーザーがパーを出した時の条件分岐
+    //     if(user == 2 && pc == 2) return 'もう一回！';
+    //     if(user == 2 && pc == 0) return '勝った〜!!';
+    //     if(user == 2 && pc == 1) return '負けちゃった..';
+    // });
+
+    let result = "";
+    //ユーザーがグーを出した時の条件分岐
+    if(user == 0 && pc == 0){
+        result='もう一回！'+'<img src="img/draw01.png">';
+    } 
+    if(user == 0 && pc == 1) {
+        result='勝った〜!! '+'<img src="img/win01.png">';
+    }
+    if(user == 0 && pc == 2) {
+        result='負けちゃった..'+'<img src="img/lose01.png">';
+    }
+    //ユーザーがチョキを出した時の条件分岐
+    if(user == 1 && pc == 1){
+        result='もう一回！'+'<img src="img/draw01.png">';
+    }
+    if(user == 1 && pc == 2){
+        result='勝った〜!!'+'<img src="img/win01.png">';
+    }
+    if(user == 1 && pc == 0){
+        result='負けちゃった..'+'<img src="img/lose01.png">';
+    }
+    //ユーザーがパーを出した時の条件分岐
+    if(user == 2 && pc == 2){
+        result='もう一回！'+'<img src="img/draw01.png">';
+    }
+    if(user == 2 && pc == 0){
+        result='勝った〜!!'+'<img src="img/win01.png">';
+    }
+    if(user == 2 && pc == 1){
+        result='負けちゃった..'+'<img src="img/lose01.png">';
+    }
 
     //勝負の結果をresultに表示
-    document.getElementById("result").textContent =result();
+    $("#result").html(result);
+
     
 }

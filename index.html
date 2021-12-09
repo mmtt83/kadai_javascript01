@@ -9,45 +9,46 @@
     <title>Document</title>
 </head>
 <body>
-    <section>
-        <h1 class="janken_title">音と一緒にジャンケンしましょう！</h1>
-    </section>
-    <section class="content-wrap">
-        <ul class="content-list text-center">
-            <li class="content-left">
-                <h2 class="content-title text-center">手を選んでください。</h2>
-                <button>勝負</button>
-                <div>
-                    <ul class="left-list">
-                        <li><img src="img/gu.png" onclick="janken(0)" alt="グー"></li>
-                        <li><img src="img/choki.png" onclick="janken(1)" alt="チョキ"></li>
-                        <li><img src="img/pa.png" onclick="janken(2)" alt="パー"></li>
-                    </ul>
-                </div>
-            </li>
-            <li class="content-right">
-                <div class="your-area">
-                    <h2 class="content-title text-center">あなた</h2>
-                    <div class="text-center"><img src="" id="userImg"></div>  <!--あなたの手の画像を表示-->
+     <section class="content-wrap">
 
-                </div>
-                <div class="pc-area">
-                    <h2 class="content-title text-center">コンピューター</h2>
-                    <div class="text-center"><img src="" id="pcImg"></div>  <!--PCの手の画像を表示-->
-                </div>
-                
-            </li>
-        </ul>
-        <div class="kekka">
-            <h2 class="content-title text-center">結果は</h2>
-            <p id="result" class="kekka-text text-center"></p>
-        </div>
+
+    <ul class="content-list text-center">
+        <li class="content-left">
+            
+            <h1 class="janken_title text-center">いざ、勝負！！</h1>
+            <h2 class="janken_title_sub text-center">手を選んでください。</h2>
+
+            <div class="janken-area">
+                <ul class="left-list">
+                    <li class="left-item"><img src="img/gu_img.png" onclick="janken(0)" alt="グー" style="width:150px;"></li>
+                    <li class="left-item"><img src="img/choki_img.png" onclick="janken(1)" alt="チョキ" style="width:150px;"></li>
+                    <li class="left-item"><img src="img/pa_img.png" onclick="janken(2)" alt="パー" style="width:150px;"></li>
+                </ul>
+            </div>
+            <div class="kekka">
+                    <p id="result" class="kekka-text text-center"></p>
+            </div>
+        </li>
+        <li class="content-right">
+            <div class="your-area">
+                <h2 class="content-title text-center">あなた</h2>
+                <div class="text-center"><img src="" id="userImg"></div>  <!--あなたの手の画像を表示-->
+
+            </div>
+            <div class="pc-area">
+                <h2 class="content-title text-center">コンピューター</h2>
+                <div class="text-center"><img src="" id="pcImg"></div>  <!--PCの手の画像を表示-->
+            </div>
+            
+        </li>
+    </ul>
+    
         
     </section>
     <footer>
 
     </footer>
-
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="js/janken.js"></script>
 </body>
 </html>
