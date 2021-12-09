@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/stye.css">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <h1 class="janken_title">音と一緒にジャンケンしましょう！</h1>
+    </section>
+    <section class="content-wrap">
+        <ul class="content-list text-center">
+            <li class="content-left">
+                <h2 class="content-title text-center">手を選んでください。</h2>
+                <button>勝負</button>
+                <div>
+                    <ul class="left-list">
+                        <li><img src="img/gu.png" onclick="janken(0)" alt="グー"></li>
+                        <li><img src="img/choki.png" onclick="janken(1)" alt="チョキ"></li>
+                        <li><img src="img/pa.png" onclick="janken(2)" alt="パー"></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="content-right">
+                <div class="your-area">
+                    <h2 class="content-title text-center">あなた</h2>
+                    <div class="text-center"><img src="" id="userImg"></div>  <!--あなたの手の画像を表示-->
+
+                </div>
+                <div class="pc-area">
+                    <h2 class="content-title text-center">コンピューター</h2>
+                    <div class="text-center"><img src="" id="pcImg"></div>  <!--PCの手の画像を表示-->
+                </div>
+                
+            </li>
+        </ul>
+        <div class="kekka">
+            <h2 class="content-title text-center">結果は</h2>
+            <p id="result" class="kekka-text text-center"></p>
+        </div>
+        
+    </section>
+    <footer>
+
+    </footer>
+
+    <script src="js/janken.js"></script>
+</body>
+</html>
