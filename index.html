@@ -9,20 +9,23 @@
     <title>Document</title>
 </head>
 <body>
-     <section class="content-wrap">
+    <section class="content-wrap">
 
-
+    <div id="audio">
+        <audio src="img/jankenpon_01.wav" id="play-button"></audio>
+    </div>
     <ul class="content-list text-center">
         <li class="content-left">
-            
-            <h1 class="janken_title text-center">いざ、勝負！！</h1>
-            <h2 class="janken_title_sub text-center">手を選んでください。</h2>
+            <!-- <h1 class="janken_title text-center">いざ、勝負！！</h1> -->
+            <a type="button" id="start">① いざ、勝負！！</a>
+
+            <h2 class="janken_title_sub text-center">②手を選んでください。<br>↓↓↓</h2>
 
             <div class="janken-area">
                 <ul class="left-list">
-                    <li class="left-item"><img src="img/gu_img.png" onclick="janken(0)" alt="グー" style="width:150px;"></li>
-                    <li class="left-item"><img src="img/choki_img.png" onclick="janken(1)" alt="チョキ" style="width:150px;"></li>
-                    <li class="left-item"><img src="img/pa_img.png" onclick="janken(2)" alt="パー" style="width:150px;"></li>
+                    <li class="left-item btn" data-score="0"><img src="img/gu_img.png" style="width:150px;"></li>
+                    <li class="left-item btn" data-score="1"><img src="img/choki_img.png" style="width:150px;"></li>
+                    <li class="left-item btn" data-score="2"><img src="img/pa_img.png" style="width:150px;"></li>
                 </ul>
             </div>
             <div class="kekka">
@@ -42,6 +45,7 @@
             
         </li>
     </ul>
+    
     
         
     </section>

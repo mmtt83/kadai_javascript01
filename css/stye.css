@@ -7,6 +7,21 @@ img{
 .text-center{
     text-align: center;
 }
+#start{
+    font-size: 40px;
+    font-weight: bold;
+    display: inline-block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    background: #fff;/*ボタン色*/
+    border: solid 4px #481945;
+    border-radius: 3px;
+    margin: 50px 0 30px;
+    box-shadow: 2px 2px 1px 1px #bbb;
+}
+#start:hover{
+    background-color: #EAE8EA;
+}
 .janken_title{
     font-size: 40px;
     font-weight: bold;
@@ -14,7 +29,8 @@ img{
 }
 .janken_title_sub{
     font-size: 22px;
-    margin: 0 0 50px;
+    margin: 0 0 40px;
+    line-height: 1.5;
 }
 .content-title{
     font-size:26px;
@@ -68,7 +84,7 @@ img{
     width:30%;
 }
 .kekka{
-    margin: 100px 0 0;
+    margin: 80px 0 0;
 }
 .kekka img{
     width:100px;
