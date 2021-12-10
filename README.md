@@ -1,6 +1,7 @@
 # kadai_javascript01
 
 ジャンケンアプリの作成
+https://mmtt83.github.io/kadai_javascript01/
 
 ■仕様(現状)
 1. 「①いざ、勝負！！」ボタンを押すと、「ジャンケンぽん」の音が再生される
