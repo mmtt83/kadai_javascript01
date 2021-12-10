@@ -23,3 +23,26 @@ https://mmtt83.github.io/kadai_javascript01/
  ■出来なかったところ
  ・秒数に合わせた条件分岐が動かず
  
+■参考サイト
+https://techacademy.jp/magazine/5537
+
+音楽ファイルの再生と条件式
+https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q11192259181
+
+JavaScriptでsetTimeoutを使う方法【初心者向け】現役エンジニアが解説
+https://techacademy.jp/magazine/5541
+
+JavaScriptでsetIntervalを使う方法【初心者向け】現役エンジニアが解説
+https://uxmilk.jp/10065
+
+【jQuery】遅延実行 – 数秒後にイベントを発生させる
+https://ziyudom.com/js-delay/
+
+【javascript】jQueryを使わない診断テスト
+https://tech-dig.jp/shindan/
+
+【JavaScript】プログラミング授業案⑦【心理テスト】
+https://muraumusic.com/javascript-lesson7/
+
+■音ファイル
+https://www14.big.or.jp/~amiami/happy/voice_01.html#208_janken
